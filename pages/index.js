@@ -10,7 +10,7 @@ export default function Home() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState({});
   const [loading, setLoading] = useState(false);
-  const url = `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=${process.env.NEXT_PUBLIC_PUBLIC_KEY}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=dubai&appid=${process.env.NEXT_PUBLIC_PUBLIC_KEY}`;
   const fetchData = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -21,7 +21,6 @@ export default function Home() {
     setCity("");
     setLoading(false);
   };
-  console.log(url);
   return (
     <>
       <Head>
