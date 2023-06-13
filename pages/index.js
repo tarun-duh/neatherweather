@@ -26,7 +26,18 @@ export default function Home() {
       <Head>
         <title>WeatherApp</title>
       </Head>
-      <h1 className="font-bold text-5xl">tarun</h1>
+      <div className="absolute top-0 bottom-0 left-0 right-0 bg-black/40 z-[1]"></div>
+      //search//
+      <div className="relative flex ">
+        <form>
+          <div>
+            <input type="text" placeholder="search city" name="" id="" />
+          </div>
+          <button onClick={fetchData}>
+            <BsSearch></BsSearch>
+          </button>
+        </form>
+      </div>
     </>
   );
 }
